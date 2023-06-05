@@ -8,7 +8,7 @@
 							<router-link to="/employee" class="btn btn-primary float-right" style="margin-top: 6px;margin-right: 6px;">All Employee</router-link>
 							<div class="login-form">
 								<div class="text-center">
-									<h1 class="h4 text-gray-900 mb-4">Add Employee</h1>
+									<h1 class="h4 text-gray-900 mb-4">Tambahkan Karyawan</h1>
 								</div>
 								<form @submit.prevent='storeEmployee' enctype="multipart/form-data">
 									<div class="form-group">

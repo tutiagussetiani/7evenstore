@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="{{ asset('backend/img/logo/logo.png') }}" rel="icon">
-  <title>Inventory Management System</title>
+  <link href="{{ asset('backend/img/logo/logo.jpg') }}" rel="icon">
+  <title>7evenstore</title>
 
 
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
@@ -27,35 +27,35 @@
         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
           <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon">
-              <img src="{{ asset('backend/img/logo/logo2.png') }}">
+              <img src="{{ asset('backend/img/logo/logo2.jpg') }}">
             </div>
-            <div class="sidebar-brand-text mx-3">IMS</div>
+            <div class="sidebar-brand-text mx-3">7evenstore</div>
           </a>
           <hr class="sidebar-divider my-0">
           <li class="nav-item active">
             <router-link class="nav-link" to="/home">
               <i class="fas fa-fw fa-tachometer-alt"></i>
-              <span>Dashboard</span></router-link>
+              <span>Halaman Utama</span></router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/pos">
                 <i class="fas fa-fw fa-table"></i>
-                <span>POS</span></router-link>
+                <span>Penjualan</span></router-link>
               </li>
               <hr class="sidebar-divider">
               <div class="sidebar-heading">
-                Features
+                Fitur
               </div>
               <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
                 aria-expanded="true" aria-controls="collapseBootstrap">
                 <i class="far fa fa-users"></i>
-                <span>Employee</span>
+                <span>Karyawan</span>
               </a>
               <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                  <router-link class="collapse-item" to="/store-employee">Add Employee</router-link>
-                  <router-link class="collapse-item" to="/employee">All Employee</router-link>
+                  <router-link class="collapse-item" to="/store-employee">Tambahkan Karyawan</router-link>
+                  <router-link class="collapse-item" to="/employee">Semua Karyawan</router-link>
                 </div>
               </div>
             </li>
@@ -63,12 +63,12 @@
               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap1"
               aria-expanded="true" aria-controls="collapseBootstrap1">
               <i class="far fa-fw fa-window-maximize"></i>
-              <span>Supplier</span>
+              <span>Pemasok</span>
             </a>
             <div id="collapseBootstrap1" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
-                <router-link class="collapse-item" to="/store-supplier">Add Supplier</router-link>
-                <router-link class="collapse-item" to="supplier">All Supplier</router-link>
+                <router-link class="collapse-item" to="/store-supplier">Tambahkan Pemasok</router-link>
+                <router-link class="collapse-item" to="supplier">Semua Pemasok</router-link>
               </div>
             </div>
           </li>
@@ -76,12 +76,12 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap2"
             aria-expanded="true" aria-controls="collapseBootstrap2">
             <i class="far fa fa-list"></i>
-            <span>Category</span>
+            <span>Kategori</span>
           </a>
           <div id="collapseBootstrap2" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-              <router-link class="collapse-item" to="/store-category">Add Category</router-link>
-              <router-link class="collapse-item" to="category">All Category</router-link>
+              <router-link class="collapse-item" to="/store-category">Tambahkan Kategori</router-link>
+              <router-link class="collapse-item" to="category">Semua Kategori</router-link>
             </div>
           </div>
         </li>
@@ -89,31 +89,31 @@
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap3"
           aria-expanded="true" aria-controls="collapseBootstrap3">
           <i class="far fa fa-shopping-bag"></i>
-          <span>Product</span>
+          <span>Produk</span>
         </a>
         <div id="collapseBootstrap3" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <router-link class="collapse-item" to="/store-product">Add Product</router-link>
-            <router-link class="collapse-item" to="product">All Product</router-link>
+            <router-link class="collapse-item" to="/store-product">Tambahkan Produk</router-link>
+            <router-link class="collapse-item" to="product">Semua Produk</router-link>
           </div>
         </div>
       </li>
       <li class="nav-item">
         <router-link to="stock" class="nav-link" aria-expanded="true">
           <i class="far fa fa-credit-card"></i>
-          <span>Stock</span>
+          <span>Stok</span>
         </router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap4"
         aria-expanded="true" aria-controls="collapseBootstrap4">
         <i class="far fa fa-book"></i>
-        <span>Expense</span>
+        <span>Pengeluaran</span>
       </a>
       <div id="collapseBootstrap4" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <router-link class="collapse-item" to="/store-expense">Add Expense</router-link>
-          <router-link class="collapse-item" to="expense">All Expense</router-link>
+          <router-link class="collapse-item" to="/store-expense">Tambahkan Pengeluaran</router-link>
+          <router-link class="collapse-item" to="expense">Semua Pengeluaran</router-link>
         </div>
       </div>
     </li>
@@ -121,12 +121,12 @@
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrapcustomer"
       aria-expanded="true" aria-controls="collapseBootstrapcustomer">
       <i class="far fa fa-user"></i>
-      <span>Customer</span>
+      <span>Pelanggan</span>
     </a>
     <div id="collapseBootstrapcustomer" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <router-link class="collapse-item" to="/store-customer">Add Customer</router-link>
-        <router-link class="collapse-item" to="customer">All Customer</router-link>
+        <router-link class="collapse-item" to="/store-customer">Tambahkan Pelanggan</router-link>
+        <router-link class="collapse-item" to="customer">Semua Pelanggan</router-link>
       </div>
     </div>
   </li>
@@ -134,12 +134,12 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap5"
     aria-expanded="true" aria-controls="collapseBootstrap5">
     <i class="far fa fa-credit-card"></i>
-    <span>Salary</span>
+    <span>Gaji</span>
   </a>
   <div id="collapseBootstrap5" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
-      <router-link class="collapse-item" to="/given-salary">Add Salary</router-link>
-      <router-link class="collapse-item" to="salary">All Salary</router-link>
+      <router-link class="collapse-item" to="/given-salary">Tambahkan Gaji</router-link>
+      <router-link class="collapse-item" to="salary">Gaji Karyawan</router-link>
     </div>
   </div>
 </li>
@@ -147,17 +147,17 @@
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstraporder"
   aria-expanded="true" aria-controls="collapseBootstraporder">
   <i class="fab fa fa-database"></i>
-  <span>Orders</span>
+  <span>Pesanan</span>
 </a>
 <div id="collapseBootstraporder" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
   <div class="bg-white py-2 collapse-inner rounded">
-    <router-link class="collapse-item" to="/today-orders">Today Orders</router-link>
+    <router-link class="collapse-item" to="/today-orders">Pesanan Hari Ini</router-link>
   </div>
 </div>
 </li>
 <hr class="sidebar-divider">
 <div class="sidebar-heading">
-  Developed By Mamun {{ date('Y') }}
+  Developed By Kelompok 7 {{ date('Y') }}
 </div>
 </ul>
 </nav>
@@ -176,7 +176,7 @@
         aria-haspopup="true" aria-expanded="false">
         <img class="img-profile rounded-circle" src="{{ asset('backend/img/boy.png') }}" style="max-width: 60px">
         <span class="ml-2 d-none d-lg-inline text-white small">Admin</span>
-        <router-link to="/logout" class="ml-2 d-none d-lg-inline text-white small">Logout</router-link>
+        <router-link to="/logout" class="ml-2 d-none d-lg-inline text-white small">Keluar</router-link>
       </a>
     </li>
   </ul>
